@@ -1,1 +1,1 @@
-const app = angular.module("Bangazon", ['ngRoute'])
+const app = angular.module("PersonalWebsite", ['ngRoute'])

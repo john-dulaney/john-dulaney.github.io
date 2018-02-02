@@ -1,6 +1,6 @@
 // ┌(° ͜ʖ͡°)┘
 
-angular.module("Bangazon")
+angular.module("PersonalWebsite")
     .controller("OrderController", function ($scope, $location, CrudFactory) {
         CrudFactory.POST()
     })

@@ -1,4 +1,4 @@
-angular.module("Bangazon")
+angular.module("PersonalWebsite")
 .controller("ComputerController", function ($scope, $location, CrudFactory) {
 
 

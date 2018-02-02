@@ -1,8 +1,8 @@
 // Imports
-angular.module("Bangazon")
+angular.module("PersonalWebsite")
     // naming the factory, passing in appropriate angular methods
     .factory("CrudFactory", function ($http, $timeout, $location, $route) {
-        const bangazonURL = "http://bangazon.com:5000/api"
+        const FirebaseURL = ""
         return Object.create(null, {
             "cache": {
                 value: null,
@@ -48,7 +48,7 @@ angular.module("Bangazon")
                 value: function (urlString) {
                         return $http({
                             method: "PUT",
-                            url: `${bangazonURL}`,
+                            url: `${PersonalWebsiteURL}`,
                             data: {}
                         }).then(response => {
                             // CODE  GOES HERE

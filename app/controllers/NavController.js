@@ -1,4 +1,4 @@
-angular.module("Bangazon")
+angular.module("PersonalWebsite")
     .controller("NavController", function ($scope, $location) {
         //nav code
     }

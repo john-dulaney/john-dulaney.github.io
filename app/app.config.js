@@ -1,37 +1,51 @@
-angular.module("Bangazon").config(function ($routeProvider) {
+// Author(s): Structure` by Steve Brownlee, High Wizard of NSS. Refactored by John Dulaney
+// Purpose: This module checks the user with firebase. Changes partials based on thei auth
+// ┌(° ͜ʖ͡°)┘
+
+angular.module("PersonalWebsite").constant("FIREBASE_CONFIG", {
+    apiKey: "AIzaSyD_w-miDKvl2jeZP6-Km94bc0TCfOhHBj4",
+    authDomain: "personal-site-ffb9c.firebaseapp.com",
+    databaseURL: "https://personal-site-ffb9c.firebaseio.com",
+    projectId: "personal-site-ffb9c",
+    storageBucket: "personal-site-ffb9c.appspot.com",
+    messagingSenderId: "126279178759"
+})
+
+
+let isAuth = AuthFactory => new Promise((resolve, reject) => {
+    if (AuthFactory.isAuthenticated()) {
+        // console.log("User is authenticated")
+        resolve()
+    } else {
+        // console.log("User is not authenticated, GET OUT")
+        reject()
+    }
+})
+
+angular.module("PersonalWebsite").run(function (FIREBASE_CONFIG) {
+    firebase.initializeApp(FIREBASE_CONFIG)
+})
+
+
+
+angular.module("PersonalWebsite").config(function ($routeProvider) {
 
     $routeProvider.
-    when("/partials/Products", {
-        templateUrl: "app/partials/Products.html",
-        controller: "ProductController",
-    })
-    .when('/partials/Computers', {
-        templateUrl: "app/partials/Computers.html",
-        controller: 'ComputerController',
-    })
-    .when('/partials/Employees', {
-        templateUrl: "app/partials/Employees.html",
-        controller: 'EmployeeController',
-    })
-    .when('/partials/Customers', {
-        templateUrl: "app/partials/Customers.html",
-        controller: 'CustomerController',
-    })
-    .when('/partials/Orders', {
-        templateUrl: "app/partials/Orders.html",
-        controller: 'OrderController',
-    })
-    .when('/partials/PaymentTypes', {
-        templateUrl: "app/partials/PaymentTypes.html",
-        controller: 'PaymentTypeController',
-    })
-    .when('/partials/ProductTypes', {
-        templateUrl: "app/partials/ProductTypes.html",
-        controller: 'ProductTypeController',
-    })
-    .when('/partials/TrainingPrograms', {
-        templateUrl: "app/partials/TrainingPrograms.html",
-        controller: 'TrainingProgramController',
-    })
-    .otherwise("/partials/Welcome")
+    when("/partials/Blog", {
+            templateUrl: "app/partials/Blog.html",
+            controller: "Blogontroller",
+        })
+        .when('/partials/Contact', {
+            templateUrl: "app/partials/Contact.html",
+            controller: 'ContactController',
+        })
+        .when('/partials/Resume', {
+            templateUrl: "app/partials/Resume.html",
+            controller: 'ResumeController',
+        })
+        .when('/partials/Projects', {
+            templateUrl: "app/partials/Projects.html",
+            controller: 'ProjectsController',
+        })
+        .otherwise("/partials/Welcome")
 })
