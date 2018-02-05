@@ -1,1 +1,50 @@
-/* guil */
+html, body {
+    margin: 0;
+    background-color: #d3f1f6
+}
+nav>ul>li {
+    padding: 50px;
+    display: inline;
+    color: white;
+}
+.navtitle {
+    font-size: 22px;
+}
+#carousel {
+    width:100%;
+    height:10%;
+}
+#bodyDiv {
+    margin-top: 50px;
+}
+
+a {
+    color: white;
+    
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.navtitle:hover {
+    text-decoration: none;
+    color: white;
+    transform: scale(1.1);
+}
+
+a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+    color: white;
+}

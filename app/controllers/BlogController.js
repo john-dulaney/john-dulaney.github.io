@@ -1,7 +1,7 @@
 angular.module("PersonalWebsite")
-.controller("ComputerController", function ($scope, $location, CrudFactory) {
+    .controller("BlogController", function ($scope, $location, CrudFactory) {
+
+        $scope.blogs = "Hello World"
 
 
-
-    
-})
+    })

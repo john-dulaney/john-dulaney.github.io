@@ -1,5 +1,5 @@
 angular.module("PersonalWebsite")
-.controller("CustomerController", function ($scope, $location, CrudFactory) {
+.controller("ContactController", function ($scope, $location, CrudFactory) {
 
 
 

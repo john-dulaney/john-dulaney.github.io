@@ -1,4 +1,4 @@
 angular.module("PersonalWebsite")
-.controller("EmployeeController", function ($scope, $location, CrudFactory) {
-    
-})
+    .controller("ProjectsController", function ($scope, $location, CrudFactory) {
+
+    })

@@ -11,29 +11,12 @@ angular.module("PersonalWebsite").constant("FIREBASE_CONFIG", {
     messagingSenderId: "126279178759"
 })
 
-
-let isAuth = AuthFactory => new Promise((resolve, reject) => {
-    if (AuthFactory.isAuthenticated()) {
-        // console.log("User is authenticated")
-        resolve()
-    } else {
-        // console.log("User is not authenticated, GET OUT")
-        reject()
-    }
-})
-
-angular.module("PersonalWebsite").run(function (FIREBASE_CONFIG) {
-    firebase.initializeApp(FIREBASE_CONFIG)
-})
-
-
-
 angular.module("PersonalWebsite").config(function ($routeProvider) {
 
     $routeProvider.
     when("/partials/Blog", {
             templateUrl: "app/partials/Blog.html",
-            controller: "Blogontroller",
+            controller: "BlogController",
         })
         .when('/partials/Contact', {
             templateUrl: "app/partials/Contact.html",
@@ -47,5 +30,21 @@ angular.module("PersonalWebsite").config(function ($routeProvider) {
             templateUrl: "app/partials/Projects.html",
             controller: 'ProjectsController',
         })
-        .otherwise("/partials/Welcome")
+        // .otherwise("/partials/Welcome")
 })
+
+// let isAuth = AuthFactory => new Promise((resolve, reject) => {
+//     if (AuthFactory.isAuthenticated()) {
+//         // console.log("User is authenticated")
+//         resolve()
+//     } else {
+//         // console.log("User is not authenticated, GET OUT")
+//         reject()
+//     }
+// })
+
+// angular.module("PersonalWebsite").run(function (FIREBASE_CONFIG) {
+//     firebase.initializeApp(FIREBASE_CONFIG)
+// })
+
+
