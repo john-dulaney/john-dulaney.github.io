@@ -1,27 +1,27 @@
 angular.module("JDWebsite")
     .controller("navCtrl", function ($window, $scope, $location) {
 
-        $scope.toProjects = function () {
+        $scope.showProjects = function () {
             $location.url("/projects")
         }
 
-        $scope.toSplash = function () {
+        $scope.showSplash = function () {
             $location.url("/splash")
         }
 
-        // $scope.toPdf = function() {
+        // $scope.showPdf = function() {
         //     $location.url("/pdf")
         // }
 
-        $scope.toTech = function () {
+        $scope.showTech = function () {
             $location.url("/technologies")
         }
 
-        $scope.toGitHub = function () {
+        $scope.showGitHub = function () {
             $window.open("https://github.com/john-dulaney")
         }
 
-        $scope.toLinkedIn = function () {
+        $scope.showLinkedIn = function () {
             $window.open("https://www.linkedin.com/in/john-dulaney-032143130/")
         }
 

@@ -6,7 +6,7 @@ Messages for NSS staff  //////  Changelog :
 
 Date      -       Time    -     Comment
 ==============================================================================================================================
-2FEB18    -       14:11   -     Returning to the scene of a dumpster fire. Time to put it out.
+2FEB18    -       14:11   -     Returning to the scene of a dumpster fire. Time to put it out. <br>
 17NOV17   -       11:34   -     Beginning browserification
 26OCT17   -       13:28   -     Admin page now properly stores readable info to local db that blog.html can read.<br>
 25OCT17   -       13:22   -     Modularized directories. Added Admin page. <br>

@@ -1,6 +1,5 @@
 // Imports
 angular.module("JDWebsite")
-    // naming the factory, passing in appropriate angular methods
     .factory("dataFactory", function ($http, $timeout, $location, $route) {
 
         return Object.create(null, {
