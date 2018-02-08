@@ -7,44 +7,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="styles/styles.css" rel="stylesheet">
-    <title>John Dulaney</title>
+    <title>John Dulaney - Software Developer</title>
 </head>
-
-<body>
-    
-    <body ng-app="PersonalWebsite" ng-cloak>
-        
-        <nav ng-cloak ng-include="'app/partials/Navigation.html'"></nav>
-        
-        <h2>
-            <strong></strong>
-        </h2>
-        <div ng-cloak ng-view></div>
-        <!-- ( ° ͜ʖ͡°)╭n╮ -->
+<link href="/styles/styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
 
-        <!-- CDNs -->
-        <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-            crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
-        <!-- app files  -->
-        <script src="./app/app.js"></script>
-        <script src="./app/app.config.js"></script>
-
-        <!-- nav -->
-        <script src="./app/controllers/NavController.js"></script>
-        <!-- Products -->
-        <script src="./app/factories/CrudFactory.js"></script>
-        <script src="./app/controllers/BlogController.js"></script>
-        <script src="./app/controllers/ContactController.js"></script>
-        <script src="./app/controllers/WelcomeController.js"></script>
-        <script src="./app/controllers/ResumeController.js"></script>
-    </body>
+<body ng-app="JDWebsite" ng-cloak>
+    <!-- ( ° ͜ʖ͡°)╭n╮ -->
+    <nav class="navWrap" ng-cloak ng-include="'app/partials/nav.html'"></nav>
+    <div ng-cloak ng-view></div>
 </body>
+
+
+
+
+<!-- CDNs -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<!-- <script src="./lib/node_modules/angular/angular.min.js"></script>
+<script src="./lib/node_modules/angular-route/angular-route.min.js"></script> -->
+
+<!-- app files  -->
+<script src="./app/app.js"></script>
+<script src="./app/factories/dataFactory.js"></script>
+<script src="./app/controllers/navCtrl.js"></script>
+<script src="./app/controllers/projectsCtrl.js"></script>
+<script src="./app/controllers/splashCtrl.js"></script>
+<script src="./app/controllers/technologiesCtrl.js"></script>
+<!-- <script src="./app/controllers/pdfCtrl.js"></script> -->
 
 </html>

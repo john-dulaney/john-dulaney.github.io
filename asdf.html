@@ -2,39 +2,40 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PersonalWebsite</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link href="styles/styles.css" rel="stylesheet">
+    <title>John Dulaney</title>
 </head>
 
-<body ng-app="PersonalWebsite" ng-cloak>
-
-        <nav ng-cloak ng-include="'app/partials/Navigation.html'"></nav>
+<body>
+    
+    <body ng-app="PersonalWebsite" ng-cloak>
         
+        <nav ng-cloak ng-include="app/partials/Navigation.html"></nav>
+        
+        <h2>
+            <strong></strong>
+        </h2>
         <div ng-cloak ng-view></div>
-        <!-- ( ° ͜ʖ͡°)╭n╮ -->
 
 
         <!-- CDNs -->
-        <script src="./lib/node_modules/angular/angular.min.js"></script>
-        <script src="./lib/node_modules/angular-route/angular-route.min.js"></script>
+    
 
-
-        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
         <!-- app files  -->
         <script src="./app/app.js"></script>
         <script src="./app/app.config.js"></script>
-
-        <!-- nav -->
         <script src="./app/controllers/NavController.js"></script>
-        <!-- Products -->
         <script src="./app/factories/CrudFactory.js"></script>
         <script src="./app/controllers/BlogController.js"></script>
         <script src="./app/controllers/ContactController.js"></script>
         <script src="./app/controllers/WelcomeController.js"></script>
         <script src="./app/controllers/ResumeController.js"></script>
+    </body>
 </body>
 
 </html>
