@@ -24,4 +24,8 @@ angular.module("JDWebsite")
         $scope.toLinkedIn = function () {
             $window.open("https://www.linkedin.com/in/john-dulaney-032143130/")
         }
+
+        $scope.toSendEmail = function () {
+            $window.open("mailto:john.s.dulaney1@gmail.com")
+        }
     })

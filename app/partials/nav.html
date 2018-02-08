@@ -1,69 +1,49 @@
 <div class="navBar" ng-controller="navCtrl">
-
-    <div class="devIcons">
-        <div ng-click="toSplash()">
-            <h1>John Dulaney</h1>
-        </div>
-        <div ng-click="toSplash()">
-            <i class="far fa-user"></i>
-        </div>
+    <!-- John Dulaney button -->
+    <a class="navbar-brand nav-item nav-link active devIcons" ng-click="toSplash()" href="#">John Dulaney
+        <span class="sr-only">(current)</span>
+    </a>
+    <div ng-click="toSplash()">
+        <a class="far fa-user"></a>
     </div>
 
-    <div class="linksSubGrid">
+    <!-- container for subsequent buttons -->
+    <div class="" id="navbarNavAltMarkup">
 
-        <div ng-click="toProjects()">
-            <div>
-                <i class="fas fa-code"></i>
-            </div>
-            <div>
-                <h5>Projects</h5>
-            </div>
-        </div>
+        <!-- projects button -->
+        <a class="nav-item nav-link" ng-click="toProjects()">
+            Projects
+            <a class="fas fa-code"></a>
+        </a>
 
-        <div ng-click="toTech()">
-            <div>
-                <i class="fas fa-wrench"></i>
-            </div>
-            <div>
-                <h5>Technologies</h5>
-            </div>
-        </div>
+        <!-- tech button -->
+        <a class="nav-item nav-link" ng-click="toTech()">
+            Tech
+            <a class="fas fa-wrench"></a>
+        </a>
 
-        <div ng-click="toLinkedIn()">
-            <div>
-                <i class="fab fa-linkedin"></i>
-            </div>
-            <div>
-                <h5>LinkedIn</h5>
-            </div>
-        </div>
+        <!-- linkedin button  -->
+        <a class="nav-item nav-link" ng-click="toLinkedIn()">
+            LinkedIn
+            <a class="fab fa-linkedin"></a>
+        </a>
 
-        <div ng-click="toGitHub()">
-            <div>
-                <i class="fab fa-github-alt"></i>
-            </div>
-            <div>
-                <h5>Github</h5>
-            </div>
-        </div>
+        <!-- github button -->
+        <a class="nav-item nav-link" ng-click="toGitHub()">
+            Github
+            <a class="fab fa-github-alt"></a>
+        </a>
 
-        <!-- <div ng-click="toPdf()">
-            <div>
-                <i class="far fa-list-alt"></i>
-            </div>
-            <div>
-                <h5>Resume</h5>
-            </div>
-        </div> -->
+        <!-- email button -->
+        <a class="nav-item nav-link" ng-click="toSendMail()" href="mailto:john.s.dulaney1@gmail.com">
+            Email
+            <a class="far fa-envelope"></a>
+        </a>
 
-        <div ng-click="toSendMail()">
-            <div>
-                <i class="far fa-envelope"></i>
-            </div>
-            <div>
-                <h5>Email</h5>
-            </div>
-        </div>
-
+        <!-- resume pdf button  -->
+        <!-- <a class="nav-item nav-link" ng-click="toPdf()">
+            Resume
+            <a class="far fa-list-alt"></a>
+        </a> -->
     </div>
 </div>
