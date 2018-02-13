@@ -8,7 +8,7 @@ angular.module("JDWebsite")
                 writable: true
             },
             "populateCache": {
-                value: $http.get('https://john-dulaney.github.io/data/data.JSON')
+                value: $http.get('https://john-dulaney.github.io/data/data.json')
                     .then(response => {
                         console.log(response)
                         this.cache = response
