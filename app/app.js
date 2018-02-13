@@ -7,7 +7,7 @@ app.config(function ($routeProvider) {
             controller: "splashCtrl"
         })
         .when("/projects", {
-            templateUrl: "app/partials/projects.html",
+            templateUrl: "john-dulaney.github.io/#!/projects",
             controller: "projectsCtrl",
         })
         .when("/technologies", {
