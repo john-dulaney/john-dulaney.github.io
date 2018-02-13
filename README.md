@@ -1,15 +1,7 @@
-# John Dulaney's Website
+# John Dulaney's Personal Website
 
-Repo for my personal site. General mess at all times, as is tradition.
+[johndulaney.net](https://johndulaney.net)  <--- this link does not like my address. johndulaney.net works. Markdown is stupid.
 
-Messages for NSS staff  //////  Changelog :
+This repo hosts files for my personal site. Its a simple single page application built using **AngularJS**, **Bootstrap**, **HTML5**, and Basic **CSS**.
 
-Date      -       Time    -     Comment
-==============================================================================================================================
-2FEB18    -       14:11   -     Returning to the scene of a dumpster fire. Time to put it out. <br>
-17NOV17   -       11:34   -     Beginning browserification
-26OCT17   -       13:28   -     Admin page now properly stores readable info to local db that blog.html can read.<br>
-25OCT17   -       13:22   -     Modularized directories. Added Admin page. <br>
-19OCT17   -       15:48   -     Pagination buttons now injected by JS, Slight styling. Added blog post. <br>
-19OCT17   -       14:28   -     Pagination in blog working, nothing styled. <br>
-19OCT17   -       13:28   -     Most tickets barely complete. Currently working on a functioning Paginate.
+
