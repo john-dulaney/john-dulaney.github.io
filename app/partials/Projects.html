@@ -1,72 +1,26 @@
-<div class="projectsWrap">
+<div class="container text-wrapper">
+    <h2>Some Projects that I have created or Contributed to:</h2>
+</div>
 
-    <div ng-click="rightClick(projDisplay)" class="rightArrow">
-        <h2>
-            <i class="fas fa-angle-right"></i>
-        </h2>
-    </div>
-
-    <div ng-click="leftClick(projDisplay)" class="leftArrow">
-        <h2>
-            <i class="fas fa-angle-left"></i>
-        </h2>
-    </div>
-
-    <div class="a">
-
-        <div ng-repeat="(key, value) in projects">
-            <div ng-if="projDisplay === key">
-                <div>
-                    <div>
-                        {{value.name}}
+<div class="container text-wrapper" >
+    <div class="row">
+        <div class="card-columns d-inline-block ">
+            <div class="“col-md-4”" ng-repeat="(key, value) in myProjects">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src={{value.picture}} alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">{{value.name}}</h4>
+                        <p class="card-text">{{value.description}}</p>
                     </div>
-                    <div ng-click="linkTo(value.gitUrl)">
-                        View source code on GitHub
-                    </div>
-                    <div ng-click="linkTo(value.siteUrl)">
-                        Visit Site
-                    </div>
-                    <div>
-                        {{value.overview}}
-                    </div>
-                </div>
-
-                <div class="buttonWrap">
-                    <div ng-repeat="(key, value) in value.grabs">
-                        <button ng-click="changeGrab(key)" class="projButton">
-                            {{value.name}}
-                        </button>
-                    </div>
-                </div>
-
-                <div ng-repeat="(key, value) in value.grabs">
-                    <div ng-if="grabDisplay === key">
-                        <div>
-                            <div>
-                                {{value.name}}
-                            </div>
-                            <div>
-                                {{value.description}}
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img class="projImg" ng-src="{{value.img}}">
-                            </div>
-                        </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> {{value.techUsed}} </li>
+                        <li class="list-group-item">{{value.teammates}}</li>
+                    </ul>
+                    <div class="card-block">
+                        <a ng-click="linkTo(value.gitUrl)" class="card-link">Github Repo</a>
+                        <a ng-click="linkTo(value.siteUrl)" class="card-link">Site Link (if available)</a>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-
-    <div class="projectNumbers">
-        <div ng-repeat="(key, value) in projects">
-            <p ng-click="numbClick(key)">
-                {{key}}
-            </p>
-        </div>
-    </div>
-
-</div>
