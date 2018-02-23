@@ -1,8 +1,9 @@
 // Styling for the masthead
 header.masthead {
+  padding-top: 60px;
   text-align: center;
   color: white;
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/me-wedding.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -15,6 +16,12 @@ header.masthead {
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
+      text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
       @include serif-font;
     }
     .intro-heading {
@@ -22,6 +29,12 @@ header.masthead {
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
+      text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
       @include heading-font;
     }
   }
