@@ -1,0 +1,76 @@
+{
+    "splash": {
+        "contentOne": "Hello, I am apprentice web developer John Dulaney and welcome to my site! I say apprentice because I am currently enrolled in a full stack front end web development course at the Nashville Software School. This site is a representation of skills I have learned/am learning, as well as a project we are require to keep up with.",
+
+        "contentTwo": "A short little bio: I was born November 22nd, 1988 in Knoxville Tennessee and have been living between East and middle TN my whole life, save the 5 years I attended a military academy in Missouri (Wentworth Military Academy). I graduated and Commissioned as an officer in the National Guard from there and soon attended the University of Missouri where a car accident ended my Army career and left me in a wheelchair. I have since returned to the Nashville area and attend NSS with high hopes on becoming a competent and successful web developer."
+    },
+    "myProjects": {
+        "projectOne": {
+            "name": "This Personal Website",
+            "picture": "../../lib/images/john.png",
+            "gitUrl": "https://github.com/john-dulaney/john-dulaney.github.io",
+            "siteUrl": "johndulaney.net",
+            "description": "This website you are currently on is one of my starting projects at Nashville Software School. It will continue to grow as my knowledge of programming expands. I intend to keep this bad boy updated.",
+            "techUsed": "HTML5, AngularJS, CSS3, Bootstrap, Grunt, Git",
+            "teammates": "No teammates"
+        },
+        "projectTwo": {
+            "name": "Nashville Stock App",
+            "picture": "../../lib/images/charts.jpeg",
+            "gitUrl": "https://github.com/john-dulaney/Nashville-Stock-App",
+            "siteUrl": "https://john-dulaney.github.io/Nashville-Stock-App/",
+            "description": "This app allows you to sign in and view stock prices in real time. It also allows you to save certain stocks, positioning them on your dashboard for easy access. You will also be granted 100 credits that you can bet towards stock! See how much you can make!",
+            "techUsed": "HTML5, AngularJS, CSS3, Bootstrap, Grunt, Git, jQuey, AngularCharts",
+            "teammates": "No teammates"
+        },
+        "projectFour": {
+            "name": "Nutshell",
+            "picture": "../../lib/images/nutshell.jpg",
+            "gitUrl": "https://github.com/john-dulaney/nutshell-wiggly-donkeys",
+            "siteUrl": "nutshell.chasesteely.com",
+            "description": "Nutshell is a psuedo social media single page app. It provided the user the ability to create tasks, add events, share news, and message other users(so long as they were on localhost.",
+            "techUsed": "HTML, JS, CSS, jQuery",
+            "teammates": "Teammates: Chase Steely, Max Wolf, and Paul Ellis"
+        },
+        "projectFive": {
+            "name": "Bangazon API",
+            "picture": "../../lib/images/nss.jpeg",
+            "gitUrl": "https://github.com/john-dulaney/Bangazon-API",
+            "siteUrl": "#",
+            "description": "Bangazon is a fictional company that I worked for at Nashville Software school. This repo is the Bangazon API we created using C#. This was our first Backend sprint and it was a  blast. We used Postman to run ahosted database that only bangazon.com  employees could access. ",
+            "techUsed": "C#, Postman",
+            "teammates": "Teammates: Lissa Goforth, Garrett Ward, Courtney Seward"
+        },
+        "projectSix": {
+            "name": "Bangazon CLI",
+            "picture": "../../lib/images/nss.jpeg",
+            "gitUrl": "h#",
+            "description": "Bangazon is a fictional company that I worked for at Nashville Software school. This repo is the Bangazon CLI we made using C# and SQLite3. This command line interface allowed the user to enter in data on customers, products, payment types, and retrie e pertinent sales information. This took us to our limit with Unit Testing and Entity relationship comprehension.",
+            "techUsed": "C#, SQLite3",
+            "teammates": "Teammates: Lissa Goforth, Garrett Ward, Courtney Seward"
+        },
+        "projectThree": {
+            "name": "Class Work",
+            "picture": "../../lib/images/work-hard-computer.jpg",
+            "gitUrl": "https://github.com/odn86/exercises",
+            "siteUrl": "#",
+            "description": "These are a few exercises assigned by NSS instructors to help use practice certain skills. Paired with the team oriented website building practice, I am developing a great working knowledge of the industry.",
+            "techUsed": "HTML5, AngularJS, CSS3, Bootstrap, Grunt, Git, SQL, C#, Browserify, jQuery",
+            "teammates": "No teammates"
+        }
+    },
+    "contact": {
+        "contactOne": {
+            "name": "Github",
+            "username": "odn86",
+            "url": "https://github.com/odn86/odn86.github.io",
+            "icon": "../images/github.png"
+        },
+        "contactTwo": {
+            "name": "Gmail",
+            "username": "John",
+            "url": "mailto:john.s.dulaney1@gmail.com",
+            "icon": "../images/gmail.svg"
+        }
+    }
+}
